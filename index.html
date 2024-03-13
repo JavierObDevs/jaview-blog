@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="bg-slate-100">
+    <!-- HEADER -->
+    <header class="bg-slate-50 shadow px-6">
+      <!-- NAV -->
+      <div class="flex justify-between h-16 items-center max-w-6xl mx-auto">
+        <!-- B-MENU -->
+        <button
+          class="rounded p-1 -ml-1 text-slate-500 hover:bg-sky-500 hover:text-slate-100 transition-colors focus:ring-2 focus:ring-slate-200"
+        >
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+        <!-- ICONO -->
+        <div class="-mr-4 flex items-center">
+          
+          <div class="space-x-8 ml-8 hidden md:flex">
+            <a class="px-3 py-2 text-sky-500" href="#">Home</a>
+            <a
+              class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors"
+              href="#"
+              >About</a
+            >
+            <a href="#" class="text-sky-500 hover:rotate-6 duration-200">
+              <img class="w-8 h-8 mt-1"  src="svg/logo-jo.svg" alt="">
+            </a>
+
+            <a
+              class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors"
+              href="#"
+              >Blog</a
+            >
+            <a
+              class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors"
+              href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <!-- B-USER & DM -->
+        <div class="">
+          <!-- DM -->
+          <button
+            class="rounded-full text-slate-500 hover:text-sky-500 transition-colors focus:ring-2 focus:ring-slate-200 focus:ring-offset-2"
+          >
+            <svg
+              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              />
+            </svg>
+          </button>
+          <!-- USER -->
+          <button
+            class="ml-4 rounded-full text-slate-500 hover:text-sky-500 transition-colors focus:ring-2 focus:ring-slate-200 focus:ring-offset-2"
+          >
+            <img
+              class="h-6 w-6 rounded-full"
+              src="https://ui-avatars.com/api/?name=Javier+Obando"
+              alt="User Name"
+            />
+          </button>
+          <!-- ...... -->
+        </div>
+      </div>
+      <!-- MENU OPTIONS -->
+      <div class="hidden space-y-1 pb-3 border-t pt-2 sm:hidden">
+        <!-- HOME -->
+        <a href="#" class="block px-3 py-2 rounded-md bg-sky-500 text-slate-50">
+          Home
+        </a>
+        <!-- ABOUT -->
+        <a
+          href="#"
+          class="block px-3 py-2 rounded-md text-slate-700 hover:bg-sky-500 hover:text-slate-50 transition-colors"
+        >
+          About
+        </a>
+        <!-- BLOG -->
+        <a
+          href="#"
+          class="block px-3 py-2 rounded-md text-slate-700 hover:bg-sky-500 hover:text-slate-50 transition-colors"
+        >
+          Blog
+        </a>
+        <!-- CONTACT -->
+        <a
+          href="#"
+          class="block px-3 py-2 rounded-md text-slate-700 hover:bg-sky-500 hover:text-slate-50 transition-colors"
+        >
+          Contact
+        </a>
+      </div>
+      <!-- FIN NAV -->
+    </header>
+    <!-- MAIN -->
+    <main class="p-4">
+      <div
+        class="mt-4 grid gap-4 md:grid-cols-2 max-w-6xl mx-auto lg:grid-cols-3"
+      >
+        <article
+          class="flex flex-col rounded-md bg-slate-50 shadow overflow-hidden"
+        >
+          <!-- header -->
+          <div class="h-52">
+            <img
+              class="h-full w-full object-cover object-center"
+              src="/img/h1.jpg"
+              alt=""
+            />
+          </div>
+          <!-- content -->
+          <div class="flex-1 space-y-3 p-5">
+            <h3 class="text-sm font-semibold text-sky-500 leading-tight">
+              Categoría
+            </h3>
+            <h2 class="text-xl font-semibold text-slate-800 leading-tight">
+              Cargador inalámbrico ultrarrápido revoluciona la carga de dispositivos móviles
+            </h2>
+            <p class="text-slate-500 hidden md:block">
+              Un nuevo cargador inalámbrico presentado por una empresa emergente promete revolucionar la forma en que cargamos nuestros dispositivos móviles. Con una tecnología innovadora, este cargador puede cargar teléfonos inteligentes hasta un 50% más rápido que los cargadores convencionales, eliminando la necesidad de cables enredados y facilitando la carga sobre la marcha.
+            </p>
+          </div>
+          <!-- footer -->
+          <div class="flex space-x-2 p-5 items-center">
+            <img
+              class="h10 - w-10 rounded-full"
+              src="https://ui-avatars.com/api/?name=Javier+Obando"
+              alt="Icon User"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm font-semibold leading-4 text-slate-600">
+                Javier Obando
+              </span>
+              <span class="text-sm text-slate-500"> 12 Marzo 2024 </span>
+            </div>
+          </div>
+        </article>
+        <article
+          class="flex flex-col rounded-md bg-slate-50 shadow overflow-hidden"
+        >
+          <!-- header -->
+          <div class="h-52">
+            <img
+              class="h-full w-full object-cover object-center"
+              src="/img/h2.jpg"
+              alt=""
+            />
+          </div>
+          <!-- content -->
+          <div class="flex-1 space-y-3 p-5">
+            <h3 class="text-sm font-semibold text-sky-500 leading-tight">
+              Tech
+            </h3>
+            <h2 class="text-xl font-semibold text-slate-800 leading-tight">
+              Lanzamiento de auriculares inteligentes con traducción en tiempo real
+            </h2>
+            <p class="text-slate-500 hidden md:block">
+              Una nueva generación de auriculares inteligentes ha llegado al mercado, equipados con tecnología de traducción en tiempo real. Estos auriculares pueden traducir conversaciones en varios idiomas al instante, lo que los convierte en una herramienta indispensable para viajeros internacionales, profesionales de negocios y cualquier persona interesada en romper barreras lingüísticas.
+            </p>
+          </div>
+          <div class="flex space-x-2 p-5 items-center">
+            <img
+              class="h10 - w-10 rounded-full"
+              src="https://ui-avatars.com/api/?name=Javier+Obando"
+              alt="Icon User"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm font-semibold leading-4 text-slate-600">
+                Javier Obando
+              </span>
+              <span class="text-sm text-slate-500"> 12 Marzo 2024 </span>
+            </div>
+          </div>
+        </article>
+        <article
+          class="flex flex-col rounded-md bg-slate-50 shadow overflow-hidden"
+        >
+          <!-- header -->
+          <div class="h-52">
+            <img
+              class="h-full w-full object-cover object-center"
+              src="/img/h3.jpg"
+              alt=""
+            />
+          </div>
+          <!-- content -->
+          <div class="flex-1 space-y-3 p-5">
+            <h3 class="text-sm font-semibold text-sky-500 leading-tight">
+              Tech
+            </h3>
+            <h2 class="text-xl font-semibold text-slate-800 leading-tight">
+              Robots domésticos autónomos llegan al mercado masivo
+            </h2>
+            <p class="text-slate-500 hidden md:block">
+              Los robots domésticos autónomos han dejado de ser una fantasía futurista y se están convirtiendo en una realidad para muchos hogares. Equipados con inteligencia artificial avanzada, estos robots pueden realizar una variedad de tareas domésticas, desde limpiar pisos hasta ayudar en la cocina, ofreciendo comodidad y eficiencia a los usuarios
+            </p>
+          </div>
+          <div class="flex space-x-2 p-5 items-center">
+            <img
+              class="h10 - w-10 rounded-full"
+              src="https://ui-avatars.com/api/?name=Javier+Obando"
+              alt="Icon User"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm font-semibold leading-4 text-slate-600">
+                Javier Obando
+              </span>
+              <span class="text-sm text-slate-500"> 12 Marzo 2024 </span>
+            </div>
+          </div>
+        </article>
+        <article
+          class="flex flex-col rounded-md bg-slate-50 shadow overflow-hidden"
+        >
+          <!-- header -->
+          <div class="h-52">
+            <img
+              class="h-full w-full object-cover object-center"
+              src="/img/h4.jpg"
+              alt=""
+            />
+          </div>
+          <!-- content -->
+          <div class="flex-1 space-y-3 p-5">
+            <h3 class="text-sm font-semibold text-sky-500 leading-tight">
+              Tech
+            </h3>
+            <h2 class="text-xl font-semibold text-slate-800 leading-tight">
+              Presentación de la próxima generación de gafas de realidad aumentada
+            </h2>
+            <p class="text-slate-500 hidden md:block">
+              Una empresa líder en tecnología ha presentado su última versión de gafas de realidad aumentada, llevando la experiencia de realidad aumentada a un nivel completamente nuevo. Estas gafas ofrecen una visualización más nítida, un seguimiento más preciso y una mayor integración con aplicaciones y servicios, lo que las convierte en una herramienta poderosa para la educación, el entretenimiento y el trabajo.
+            </p>
+          </div>
+          <div class="flex space-x-2 p-5 items-center">
+            <img
+              class="h10 - w-10 rounded-full"
+              src="https://ui-avatars.com/api/?name=Javier+Obando"
+              alt="Icon User"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm font-semibold leading-4 text-slate-600">
+                Javier Obando
+              </span>
+              <span class="text-sm text-slate-500"> 12 Marzo 2024 </span>
+            </div>
+          </div>
+        </article>
+        <article
+          class="flex flex-col rounded-md bg-slate-50 shadow overflow-hidden"
+        >
+          <!-- header -->
+          <div class="h-52">
+            <img
+              class="h-full w-full object-cover object-center"
+              src="/img/h5.jpg"
+              alt=""
+            />
+          </div>
+          <!-- content -->
+          <div class="flex-1 space-y-3 p-5">
+            <h3 class="text-sm font-semibold text-sky-500 leading-tight">
+              Tech
+            </h3>
+            <h2 class="text-xl font-semibold text-slate-800 leading-tight">
+              Impresoras 3D portátiles hacen que la fabricación sea más accesible
+            </h2>
+            <p class="text-slate-500 hidden md:block">
+              La última innovación en impresión 3D viene en forma de impresoras portátiles, que permiten a los usuarios crear objetos tridimensionales en cualquier lugar y en cualquier momento. Estas impresoras compactas y fáciles de transportar están democratizando la fabricación, permitiendo a los entusiastas, artistas y profesionales experimentar con la creación de prototipos y la producción personalizada con una facilidad sin precedentes.
+            </p>
+          </div>
+          <div class="flex space-x-2 p-5 items-center">
+            <img
+              class="h10 - w-10 rounded-full"
+              src="https://ui-avatars.com/api/?name=Javier+Obando"
+              alt="Icon User"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm font-semibold leading-4 text-slate-600">
+                Javier Obando
+              </span>
+              <span class="text-sm text-slate-500"> 12 Marzo 2024 </span>
+            </div>
+          </div>
+        </article>
+        <article
+          class="flex flex-col rounded-md bg-slate-50 shadow overflow-hidden"
+        >
+          <!-- header -->
+          <div class="h-52">
+            <img
+              class="h-full w-full object-cover object-center"
+              src="/img/h6.jpg"
+              alt=""
+            />
+          </div>
+          <!-- content -->
+          <div class="flex-1 space-y-3 p-5">
+            <h3 class="text-sm font-semibold text-sky-500 leading-tight">
+              Tech
+            </h3>
+            <h2 class="text-xl font-semibold text-slate-800 leading-tight">
+              Dispositivos de realidad virtual con capacidades de telepresencia mejoradas
+            </h2>
+            <p class="text-slate-500 hidden md:block">
+              Los últimos avances en tecnología de realidad virtual han llevado a la creación de dispositivos con capacidades de telepresencia mejoradas. Estos dispositivos permiten a los usuarios no solo sumergirse en entornos virtuales, sino también interactuar con otras personas de manera más realista, sintiendo su presencia y movimientos como si estuvieran físicamente presentes. Esta tecnología tiene el potencial de transformar la forma en que trabajamos, colaboramos y nos comunicamos a distancia.
+            </p>
+          </div>
+          <div class="flex space-x-2 p-5 items-center">
+            <img
+              class="h10 - w-10 rounded-full"
+              src="https://ui-avatars.com/api/?name=Javier+Obando"
+              alt="Icon User"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm font-semibold leading-4 text-slate-600">
+                Javier Obando
+              </span>
+              <span class="text-sm text-slate-500"> 12 Marzo 2024 </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+   
+  </body>
+</html>
